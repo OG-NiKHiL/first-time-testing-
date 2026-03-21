@@ -51,7 +51,7 @@ main{
   transform: translate(-50%,-50%) scale(0) rotate(-90deg); 
   color: white;
   background: linear-gradient(to right bottom, rgb(150, 1, 150), rgb(223, 3, 190));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all ease 0.3s;
   font-size: 80px;
