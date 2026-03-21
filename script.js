@@ -1,7 +1,17 @@
-function addunlimited (...nums){
-   let sum =0;
-   for(let i=0; i<nums.length; i++);{
-   sum = sum + nums[i];}
+var img= document.querySelector('img');
+var love=document.querySelector('#love');
 
-}
-addunlimited(1,2,3,4,5,6);
+img.addEventListener('dblclick',function(){
+      love.style.opacity= 1;
+      love.style.transform = 'translate(-50% ,-50% ) scale(1) rotate(0deg)'
+
+      setTimeout(function(){
+            love.style.transform = 'translate(-50% ,-300% ) scale(1) rotate(60deg)'
+      }, 800);
+      setTimeout(function(){
+            love.style.opacity= 0;
+      }, 1000);
+       setTimeout(function(){
+            love.style.transform = 'translate(-50% ,-50% ) scale(0) rotate(0deg)'
+      }, 1200);
+});   
